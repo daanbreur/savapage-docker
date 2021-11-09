@@ -1,0 +1,11 @@
+version: '3'
+services:
+  savapage:
+    build:
+      dockerfile: savapage.Dockerfile
+    ports:
+    - 8631:8631
+    - 8632:8632
+    volumes:
+    - ./:/workspace
+  
