@@ -13,7 +13,7 @@ RUN useradd -r savapage && \
     mkdir -p /var/log/supervisor && \
     mkdir -p /run/sshd
 
-ENV SAVA_VERSION=1.4.0-rc
+ENV SAVA_VERSION=1.5.0-rc
 RUN mkdir -p /opt/savapage && cd /opt/savapage && \
     wget https://www.savapage.org/download/snapshots/savapage-setup-${SAVA_VERSION}-linux-x64.bin -O savapage-setup-linux.bin && \
     chown savapage:savapage /opt/savapage && \
