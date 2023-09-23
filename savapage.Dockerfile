@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:jammy
 RUN apt-get update && \
     apt-get -y install cups cups-bsd poppler-utils qpdf imagemagick wget gnupg \
     software-properties-common avahi-daemon avahi-discover libnss-mdns \
